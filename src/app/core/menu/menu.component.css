@@ -1,0 +1,31 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  height: 59px;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+
+  background-color: #fefefe;
+  z-index: 99;
+}
+
+.btMenu {
+  position: relative;
+  top: 30%;
+}
+
+.iconMenu {
+  color: black;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.img:hover{
+  transition: 0.6s;
+  cursor: pointer;
+  opacity: 70%;
+}

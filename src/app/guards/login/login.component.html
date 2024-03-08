@@ -1,0 +1,27 @@
+<h2>Login</h2>
+<div *ngIf="error" class="error">{{ error }}</div>
+<form  (ngSubmit)="login()" #f="ngForm">
+
+    <div class="grid p-fluid">
+        <div class="col-12 md:col-6">
+            <label for="username1">Login</label>
+            <input id="username1" pInputText  type="text" name="username1" [(ngModel)]="username">
+        
+        </div>
+    </div>
+    <div class="grid p-fluid">
+        <div class="col-12 md:col-6">
+            <label for="password1">Senha</label>
+            <input id="password1" pInputText  type="password" name="password1" [(ngModel)]="password">
+        </div>        
+    </div>  
+    <div *ngIf="senhaIncorreta" class="grid p-fluid">
+        <div class="col-12 md:col-6">
+            <small id="username-help" class="p-error">Usuario ou senha incorreto.</small>
+        </div>
+    </div>
+    <div class="col-12 md:col-6">
+        <label>&nbsp;</label>
+        <button pButton type="submit" label="Entrar" [disabled]="!f.valid"></button>
+    </div>
+</form>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100&display=swap');
+
+body {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #212121;
+  -webkit-font-smoothing: antialiased;
+  padding: 60px !important;
+  margin: 0;
+  background-color: #f7f7f7;
+  min-height: 100%;
+  letter-spacing: 0.25px;
+}
+
+/* Estilos FullCalendar */
+.fc-event {
+  cursor: pointer !important;
+}
+
+.fc-header-toolbar {
+  background-color: #333 !important;
+  color: #fff !important;
+  padding: 0.6rem !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+@media screen and (min-width: 1024px ) and (orientation:portrait) {
+  .container {
+      width: 1024px !important;
+      margin: 0 60px !important;
+  }
+}
+
+.p-panelmenu .p-panelmenu-header > a {
+  padding: 1.25rem !important;
+  border: 0px solid #dee2e6 !important;
+  color: whitesmoke !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  font-weight: 700;
+  transition: box-shadow 0.2s;
+
+}
+
+.p-calendar .p-datepicker {
+  top: 29px !important;
+}
+
+.p-datepicker table td > span {
+
+  height: 20px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .p-galleria img {
+    width: 100% !important;
+    height: 240px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .p-galleria img {
+    width: 100% !important;
+    height: 320px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .p-galleria img {
+    width: 100% !important;
+    height: 440px !important;
+  }
+}
